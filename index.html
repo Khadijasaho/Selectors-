@@ -17,7 +17,10 @@
       background-color: orange;
     }
 
-    </styl
+    div#new-div,li.new-list{
+      background-color:blue;
+    }
+    
   </style>
 </head>
 
@@ -70,8 +73,30 @@
         <li class="my-list">I'm inside an li with a class </li>
 
       </ul>
-
     </div>
+  </fieldset>
+
+  <fieldset>
+    <legend><a id="compound">compound</a></legend>
+    <p>Compound selectors allow us to use more than one selector for a set of rules. The selectors must be separated by commas.</p>
+    <p>Here's how the CSS is applied to the element:</p>
+    <pre><code>li.my-list{
+    background-color:orange;
+}</code></pre>
+
+
+    <p>Here's what it looks like:</p>
+    <div id="new-list">I'm inside a div with an id of new-div</div>
+    <div>
+      <ul>
+        <li class="new-list">I'm inside an li with a class of new-list </li>
+        <li class="new-list">I'm inside an li with a class of new-list </li>
+        <li class="new-list">I'm inside an li with a class of new-list </li>
+
+      </ul>
+    </div>
+  </fieldset>
+
     <footer class="page-footer">
       <p><small>&copy; 2023 by
           NAME HERE, All Rights Reserved ~
